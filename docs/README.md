@@ -91,3 +91,9 @@
 - Modal is a screen that overlays the app content to provide important information or prompt the user for a decision
 
 - Since they are purposefully interruptive make sure you use them only when necessary
+
+## 15. Status Bar
+
+- The StatusBar component allow you to control the application's status bar
+
+- The status bar is the zone, typically at the top of the screen, that display the current time, Wi-Fi and networ information, battery level other status icons
