@@ -103,3 +103,9 @@
 - The ActivityIndicator component displays a circular loading indicator
 
 - It is used to inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates
+
+## 17. Alert
+
+- Alert launches an alert dialog with specified title and message
+
+- Optionally, you can also specify a list of buttons
