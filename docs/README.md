@@ -61,3 +61,9 @@
   - ImageView for Android
 
   - 'img' for the Web
+
+## 11. ScrollView
+
+- ScrollView component wrpas the platform-specific scrolling functionality
+
+- ScrollViews require ad bounded height to function properly
