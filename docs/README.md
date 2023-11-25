@@ -85,3 +85,9 @@
   - onLongPress is triggered when a press is held for longer thant 500 milliseconds
 
   - onPressOut is called when the press gesture is deactivated
+
+## 14. Modal
+
+- Modal is a screen that overlays the app content to provide important information or prompt the user for a decision
+
+- Since they are purposefully interruptive make sure you use them only when necessary

@@ -1,32 +1,27 @@
-import { View, Button, Image, Text, Pressable } from "react-native";
-const logoImg = require("./assets/adaptive-icon.png");
+import { View, Button, Image, Text, Pressable, Modal } from "react-native";
+import { useState } from "react";
 
 export default function App() {
+  const [isModalVisible, setModalVisible] = useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
       <Button
         title="Press"
-        onPress={() => console.log("Button pressed")}
+        onPress={() => setModalVisible(true)}
         color="#191970"
-        disabled
       ></Button>
-
-      <Pressable onPress={() => console.log("image pressed")}>
-        <Image source={logoImg} style={{ width: 300, height: 300 }}></Image>
-      </Pressable>
-
-      <Pressable onPress={() => console.log("text pressed")}>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat
-          nisl nulla, ac placerat leo maximus hendrerit. Aliquam velit sem,
-          pharetra elementum erat eu, accumsan viverra libero. Suspendisse
-          potenti. Sed vel tincidunt ex. Vestibulum erat odio, auctor a gravida
-          sagittis, fermentum consectetur justo. Morbi id tincidunt leo, non
-          malesuada tortor. Pellentesque cursus velit nibh, semper rhoncus arcu
-          blandit efficitur. Quisque iaculis id ligula ut maximus. Aenean
-          maximus vel neque et molestie.
-        </Text>
-      </Pressable>
+      {/* presentationStyle only for iOS */}
+      <Modal
+        visible={isModalVisible}
+        onRequestClose={() => setModalVisible(false)}
+        animationType="slide"
+        presentationStyle="pageSheet"
+      >
+        <View style={{ flex: 1, padding: 60 }}>
+          <Text>Modal Content</Text>
+          <Button title="close" onPress={() => setModalVisible(false)}></Button>
+        </View>
+      </Modal>
     </View>
   );
 }
