@@ -35,3 +35,11 @@
 - In web development terms, the View component can be compared to the `<div>` tag
 
 - The View component is typically nested inside other views and can have zero or more children of any type
+
+## 9. Text
+
+- Component for displaying text
+
+- It supports nesting, styling and touch handling
+
+- Depending on the target platform, React Native will translate this component to either a UITextView(iOS), a TextView(Android), or a 'p'(Web)
