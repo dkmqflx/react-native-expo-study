@@ -67,3 +67,9 @@
 - ScrollView component wrpas the platform-specific scrolling functionality
 
 - ScrollViews require ad bounded height to function properly
+
+## 12. Button
+
+- The button component allows user to trigget actions
+
+- The Button component has platform-specific rendering for iOS and Android
