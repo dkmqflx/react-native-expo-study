@@ -97,3 +97,9 @@
 - The StatusBar component allow you to control the application's status bar
 
 - The status bar is the zone, typically at the top of the screen, that display the current time, Wi-Fi and networ information, battery level other status icons
+
+## 16. ActivityIndicator
+
+- The ActivityIndicator component displays a circular loading indicator
+
+- It is used to inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates
