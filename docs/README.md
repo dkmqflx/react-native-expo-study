@@ -73,3 +73,15 @@
 - The button component allows user to trigget actions
 
 - The Button component has platform-specific rendering for iOS and Android
+
+## 13. Pressable
+
+- Pressable is a wrapper component that detects various stages of press interactions on its defined children
+
+- You can create a custom button using Pressable
+
+  - onPressIn is called when press is activated
+
+  - onLongPress is triggered when a press is held for longer thant 500 milliseconds
+
+  - onPressOut is called when the press gesture is deactivated
