@@ -43,3 +43,21 @@
 - It supports nesting, styling and touch handling
 
 - Depending on the target platform, React Native will translate this component to either a UITextView(iOS), a TextView(Android), or a 'p'(Web)
+
+## 10. Image
+
+- The Image component enables us to display various types of images, including
+
+  - Static images
+
+  - Network images
+
+  - Images from the local disk, such as the camera roll
+
+- Reat Native seamlessly translate the Image component to platform-specific counterparts:
+
+  - UIImageView for iOS
+
+  - ImageView for Android
+
+  - 'img' for the Web
